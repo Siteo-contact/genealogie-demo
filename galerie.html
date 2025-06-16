@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Généalogie - Galerie</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f7f7f7; color: #333; }
+    header { background: #426a5a; color: white; padding: 2rem; text-align: center; }
+    nav { background: #334c42; padding: 0.5rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: 600; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    footer { text-align: center; padding: 1rem; color: #777; font-size: 0.9rem; }
+    h1 { margin-bottom: 1rem; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galerie Photos</h1>
+    <p>Quelques images pour illustrer la passion de la généalogie</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="gallery">
+      <img src="https://images.unsplash.com/photo-1524492449090-3f3f3417ee23?auto=format&fit=crop&w=400&q=80" alt="Documents anciens" />
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Arbre généalogique" />
+      <img src="https://images.unsplash.com/photo-1544934310-90f8be33a7e1?auto=format&fit=crop&w=400&q=80" alt="Vieilles photos" />
+      <img src="https://images.unsplash.com/photo-1529257414776-99d4d6b5758a?auto=format&fit=crop&w=400&q=80" alt="Recherche archives" />
+      <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=400&q=80" alt="Manuscrits anciens" />
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Cartes historiques" />
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 - Site démo généalogie — Créé avec ❤ par Théthé
+  </footer>
+</body>
+</html>
